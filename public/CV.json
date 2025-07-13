@@ -1,0 +1,126 @@
+{
+  "name": "Maher Mohsen Bahig",
+  "title": "Machine Learning Engineer",
+  "contact": {
+    "phone": "+20 01287695176",
+    "email": "eng.mahermohsen@gmail.com",
+    "location": "Giza, Egypt",
+    "website": "https://mahermohsen-f268f.firebaseapp.com/",
+    "linkedin": "https://www.linkedin.com/in/maher-mohsen/",
+    "github": "https://github.com/maher-mohsen",
+    "leetcode": "https://leetcode.com/mezwmohsen/",
+    "medium": "https://medium.com/@mahermohsen"
+  },
+  "summary": "I am a highly motivated individual with a passion for computer science and artificial intelligence, and I believe that my skills and passion make me a valuable asset to any team.",
+  "experience": [
+    {
+      "title": "Machine Learning Engineer",
+      "type": "Full-Time",
+      "company": "SBS-Protech",
+      "duration": "January 2025 – Present"
+    },
+    {
+      "title": "Machine Learning Engineer | LLM Trainer",
+      "type": "Contractor",
+      "company": "Turing",
+      "duration": "October 2024 – March 2025"
+    },
+    {
+      "title": "Machine Learning Engineer",
+      "type": "Part-Time",
+      "company": "Real-Fiction",
+      "duration": "August 2024 – Present"
+    },
+    {
+      "title": "Software Engineer Intern",
+      "company": "E-solutions",
+      "duration": "July 2023 – August 2023"
+    },
+    {
+      "title": "Machine Learning Engineer Intern",
+      "company": "National Authority for Remote Sensing & Space Sciences (NARSS)",
+      "duration": "July 2023 – August 2023"
+    },
+    {
+      "title": "AI Trainer",
+      "company": "Remotasks",
+      "duration": "July 2023 – September 2023"
+    }
+  ],
+  "education": {
+    "institution": "Faculty of Computers and Artificial Intelligence, Cairo University",
+    "department": "Artificial Intelligence Department",
+    "duration": "09/2020 – 07/2024",
+    "gpa": "3.03 (Very Good)"
+  },
+  "skills": {
+    "technical": [
+      "C", "C++", "Python", "Java", "Html", "CSS", "JavaScript", "TypeScript", "Dart", "SQL",
+      "Data structures and Algorithms", "OOP", "Solid Design Principles", "Design Patterns", 
+      "Database Design", "Django", "NestJs", "Flutter", "Swagger",
+      "Supervised Learning", "Unsupervised Learning", "Recommender Systems",
+      "Artificial neural network", "Deep Learning", "Reinforcement learning"
+    ],
+    "soft": [
+      "Problem solving", "Teamwork", "Time management", "Communication"
+    ]
+  },
+  "projects": [
+    {
+      "name": "Math Solver App",
+      "description": "Software that solves complex linear algebra and frequency-time analysis problems (Fourier, Laplace).",
+      "technologies": ["Mathematics", "Python", "Problem Solving", "UI/UX"]
+    },
+    {
+      "name": "Garage Management System",
+      "description": "Helps manage space in garages, calculate fees, and generate reports.",
+      "technologies": ["Java", "Software engineering", "SOLID", "Design Patterns", "Clean Code"]
+    },
+    {
+      "name": "Student’s Affairs System",
+      "description": "Web application to manage student records.",
+      "technologies": ["HTML", "CSS", "JavaScript", "Ajax", "Django", "SQLite", "UI/UX"]
+    },
+    {
+      "name": "Game Rental System",
+      "description": "System to manage renting and returning games, payments and vendor operations.",
+      "technologies": ["C#", "Microsoft SQL Server", "Database Design", "EERD"]
+    },
+    {
+      "name": "Face Mask Real-Time Detector",
+      "description": "Detects face masks in real time using computer vision and ML.",
+      "technologies": ["TensorFlow", "OpenCV", "scikit-learn", "pandas"]
+    },
+    {
+      "name": "Furniture Detection and Segmentation",
+      "description": "Segments furniture using YOLOv8m, Roboflow, etc., for interior design and AR.",
+      "technologies": ["PyTorch", "OpenCV", "Roboflow", "Ultralytics", "YOLO"]
+    }
+  ],
+  "extracurricular": [
+    "Participated in 2022 Google Hash Code (54th Egypt, 3016th globally)",
+    "Internship at The Sparks Foundation (IoT & Computer Vision), 2022",
+    "17th place in 2023 Dell Hacktrick Hackathon (Egypt)"
+  ],
+  "publications": [
+    {
+      "title": "Decoding the Enigma: Neural Networks and Their Intricate Connections to the Human Brain",
+      "author": "Maher Mohsen",
+      "platform": "Medium",
+      "date": "May, 2023",
+      "url": "https://medium.com/@mahermohsen/decoding-the-enigma-neural-networks-and-their-intricate-connections-to-the-human-brain-3788725e9464"
+    }
+  ],
+  "hobbies": {
+    "gaming": {
+      "most_played_game": "Valorant",
+      "favorite_agent": "Jett"
+    },
+    "movies": {
+      "favorite_movie": "Interstellar"
+    },
+    "music": true,
+    "coding": true,
+    "machine_learning": true
+  }
+}

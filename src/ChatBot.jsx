@@ -143,9 +143,9 @@ ${jsonString}
   return (
     <div className="chat-container">
       <div className="chat-header">
-        <h2 style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+        <h2 style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize:20 }}>
           <div style={{ position: 'relative' }}>
-            <img src="/maher.jpg" alt="Maher101 Icon" style={{ width: 50, height: 50, borderRadius: '50%' }} />
+            <img src="/maher.jpg" alt="Maher101 Icon" style={{ width: 35, height: 35, borderRadius: '50%' }} />
             <span style={{
               position: 'absolute', bottom: 4, right: 4, width: 10, height: 10,
               backgroundColor: 'limegreen', borderRadius: '50%', border: '2px solid white'

@@ -78,7 +78,7 @@ body {
 }
 
 .chat-bubble.bot[dir="ltr"] {
-  flex-direction: row-reverse; /* avatar on right for LTR */
+  flex-direction: row; /* avatar on right for LTR */
 }
 
 

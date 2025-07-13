@@ -1,9 +1,12 @@
 body {
   margin: 0;
-  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #0a0f1c;
   color: #e0e0e0;
   text-shadow: 0 0 0.000001px #0ff, 0 0 0.4px #0ff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .chat-container {
@@ -29,14 +32,23 @@ body {
 
 .chat-body {
   flex: 1;
-  padding: 20px;
+  margin: 0;
+  padding: 0 20px 20px 20px;
   overflow-y: auto;
   background: radial-gradient(circle at top left, #0a0f1c, #1a2238);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure first message starts at the very top */
+.chat-body .chat-bubble:first-child {
+  margin-top: 0 !important;
 }
 
 .chat-bubble {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
+  margin-top: 8px;
   margin-bottom: 16px;
   max-width: 80%;
   animation: fadeIn 0.4s ease-in-out;
@@ -44,12 +56,31 @@ body {
 
 .chat-bubble.user {
   align-self: flex-end;
-  flex-direction: row-reverse;
+  direction: ltr; /* default fallback */
 }
+
+/* Arabic user messages: force proper layout */
+.chat-bubble.user[dir="rtl"] {
+  flex-direction: row-reverse; /* avatar on left for RTL */
+}
+
+.chat-bubble.user[dir="ltr"] {
+  flex-direction: row-reverse; /* avatar on right for LTR */
+}
+
 
 .chat-bubble.bot {
   align-self: flex-start;
 }
+/* Arabic user messages: force proper layout */
+.chat-bubble.bot[dir="rtl"] {
+  flex-direction: row-reverse; /* avatar on left for RTL */
+}
+
+.chat-bubble.bot[dir="ltr"] {
+  flex-direction: row-reverse; /* avatar on right for LTR */
+}
+
 
 .chat-bubble .icon {
   display: flex;
@@ -125,55 +156,6 @@ body {
 .chat-input button:hover {
   transform: scale(1.05);
   box-shadow: 0 0 14px #6f00ffcc;
-}
-
-.classification-box, .centered-box {
-  min-height: 100vh;
-  background: linear-gradient(to bottom right, #0a0f1c, #1e1e2f);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 28px;
-  text-align: center;
-  color: #ffffff;
-  text-shadow: 0 0 3px #0ff;
-}
-
-.classification-box h2, .centered-box h2 {
-  margin-top: 20px;
-  color: #00f0ff;
-  font-family: 'Orbitron', sans-serif;
-  letter-spacing: 1.2px;
-  font-size: 24px;
-}
-
-.centered-box input {
-  padding: 12px;
-  width: 280px;
-  margin: 12px 0;
-  border-radius: 8px;
-  border: 1px solid #0ff3;
-  background: #0e1220;
-  color: #ffffff;
-  box-shadow: inset 0 0 8px #0ff4;
-}
-
-.centered-box button {
-  padding: 12px 20px;
-  background: linear-gradient(145deg, #00f0ff, #6f00ff);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  font-weight: bold;
-  box-shadow: 0 0 10px #6f00ffaa;
-}
-
-.centered-box button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 16px #00f0ffbb;
 }
 
 .typing {
